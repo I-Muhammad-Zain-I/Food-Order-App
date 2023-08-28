@@ -1,0 +1,91 @@
+.food-list-container {
+    width: 60%;
+    margin: 2rem auto 0 auto;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Roboto';
+    box-shadow: 4px 4px 5px brown;
+    border-radius: 15px;
+}
+
+.food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.food-list-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid saddlebrown;
+    padding-bottom: 5px;
+}
+.food-list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.food-item__name {
+    font-family: 'Noto Sans';
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+.food-item__info {
+    font-family: 'Inter';
+}
+.food-item__price {
+    color: rgb(187, 104, 2)
+}
+.food-list-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+.amount__container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+
+}
+.amount__container label {
+    font-weight: bold;
+}
+.amount__input {
+    all: unset;
+    width: 10%;
+    border: 1px solid saddlebrown;
+    padding-left: 15px;
+    font-family: 'Inter';
+    transition: 0.3s ease-out;
+}
+.amount__input:focus {
+    transform: scale(1.2);
+}
+
+
+.amount__addbtn {
+    padding: 5px 25px;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    border-radius: 15px;
+    background-color: brown;
+    color: white;
+    outline: 1px solid brown;
+}
+.amount__addbtn:hover,  .amount__addbtn:focus{
+    cursor: pointer;
+    animation: outline 0.5s ease-in-out;
+}
+
+@keyframes outline {
+    from {
+        outline-offset: 0;
+    }
+    to {
+        outline-offset: 6px;
+    }
+    
+}

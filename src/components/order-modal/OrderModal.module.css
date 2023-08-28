@@ -1,0 +1,140 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232b2b80;
+}
+
+.order-modal {
+
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Inter';
+
+    /* position: absolute; */
+    /* top: 0%;
+    left: 50%;
+    transform: translate(-50%, 100%); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideDownModal 0.5s ease-in;
+    animation-fill-mode: both;
+    z-index: 1;
+
+    
+}
+
+
+@keyframes slideDownModal {
+    from {
+        /* transform: translate(-50%, -50%); */
+        top: -300px;
+
+    }
+    to {
+        top: 50%;
+        /* transform: translate(-50%, 100%); */
+    }
+}
+.modal__food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 20rem;
+    overflow: scroll;
+    padding: 10px;
+}
+.modal-list-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    border-bottom: 2px solid saddlebrown;
+    
+}
+
+.modal__food-list__last-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-list-left  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}   
+
+.modal-left__price-quantity {
+    display: flex;
+    gap: 2rem;
+}
+.modal-left__price {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    color: brown;
+}
+.modal-left__quantity {
+    border-radius: 5px;
+    border: 2px solid rgba(139, 69, 19, 0.219);
+    padding: 2px 4px;
+    color: #333;
+    font-weight: bolder;
+}
+.modal-list-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-btn {
+    font-size: 1.5rem;
+    border: 1px solid brown;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: saddlebrown;
+}
+.list-btn:hover {
+    background-color: saddlebrown;
+    color: white;
+}
+
+
+
+.total-amount {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-actions {
+    align-self: flex-end;
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-btn {
+    border-radius: 15px;
+    border: 1px solid brown;
+    padding: 5px 10px;
+}
+.modal-btn:hover {
+    cursor: pointer;
+}
+
+.modal-orderBtn {
+    background-color: brown;
+    color: white;
+}
+.modal-closeBtn {
+    color: brown;
+}

@@ -1,0 +1,32 @@
+.info-flex-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.info-board {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans';
+    gap: 1rem;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.board__heading {
+    font-size: 1.3rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+.board__desc {
+    
+}
