@@ -9,29 +9,29 @@ const images = [
 
 const BackgroundImage = (props) => {
 
-    const [backgroundImage, setBackgroundImage] = useState('');
+    // const [backgroundImage, setBackgroundImage] = useState('');
 
-    let counter = 0;
-    const getRandomBackgroundImage = () => {
-        if(counter < 3) {
-            // setCounter(() => counter + 1);
-            console.log('Counter: ', counter )
-            return images[counter++];
-        } else {
-            // setCounter(0);
-            counter = 0;
-            console.log('Counter: 0');
-            return images[0]
-        }
+    // let counter = 0;
+    // const getRandomBackgroundImage = () => {
+    //     if(counter < 3) {
+    //         // setCounter(() => counter + 1);
+    //         console.log('Counter: ', counter )
+    //         return images[counter++];
+    //     } else {
+    //         // setCounter(0);
+    //         counter = 0;
+    //         console.log('Counter: 0');
+    //         return images[0]
+    //     }
         
-    }
+    // }
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setBackgroundImage(getRandomBackgroundImage());
-        }, 5000);
-        return () => clearInterval(interval);
-      }, []);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //       setBackgroundImage(getRandomBackgroundImage());
+    //     }, 5000);
+    //     return () => clearInterval(interval);
+    //   }, []);
 
 
 
@@ -40,7 +40,7 @@ const BackgroundImage = (props) => {
 
 
     return (
-        <div style={{backgroundImage: `url(${backgroundImage})`}}
+        <div style={{backgroundImage: `url(${images[0]})`}}
             className='background-image'>
             {props.children}
         </div>

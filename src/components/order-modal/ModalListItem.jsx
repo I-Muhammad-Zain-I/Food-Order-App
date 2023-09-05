@@ -13,6 +13,7 @@ const ModalListItem = (props) => {
        orderModalCtx.AddOrderAmount(id)
     }
  
+    
     return (
         <li
          className={`${styles['modal-list-item']}`}>
@@ -23,12 +24,12 @@ const ModalListItem = (props) => {
                     <p className={`${styles['modal-left__quantity']}`}>x {props.orderItem.amount}</p>
                 </div>
             </div>
-            <div className={`${styles['modal-list-right']}`}>
+            {<div className={`${styles['modal-list-right']}`}>
                 <button onClick={() => subFoodAmount(props.orderItem.id)} 
                     className={`${styles['list-btn']}`}>-</button>
                 <button onClick={() => addFoodAmount(props.orderItem.id)}
                 className={`${styles['list-btn']}`}>+</button>
-            </div>
+            </div>}
         </li>
     )
 }

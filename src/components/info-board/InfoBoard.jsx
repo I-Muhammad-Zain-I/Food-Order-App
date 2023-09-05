@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './InfoBoard.module.css';
 
-const InfoBoard = () => {
+const InfoBoard = React.memo(() => {
   return (
     <div className={`${styles['info-flex-center']}`}>
         <section className={`${styles['info-board']}`}>
@@ -17,6 +17,6 @@ const InfoBoard = () => {
         </section>
     </div>
   )
-}
+});
 
 export default InfoBoard

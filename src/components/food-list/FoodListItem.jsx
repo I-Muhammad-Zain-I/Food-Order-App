@@ -22,12 +22,11 @@ const FoodListItem = (props) => {
             price: props.foodObj['price'],
             amount : props.foodAmount[props.foodObj['id']],
         }
-
         OrderModalCtx.AddOrderToCart(cartItem)
     }
     return (
 
-        <li className={`${styles['food-list-item']}`}>
+        <li className={`${styles['food-list-item']}`}  id= {props.foodObj['id']}>
             <div className={`${styles['food-list-info']}`}>
                 <h3 className={`${styles['food-item__name']}`}>{props.foodObj['name']}</h3>
                 <p className={`${styles['food-item__info']}`}><em>{props.foodObj['info']}</em></p>
@@ -41,6 +40,7 @@ const FoodListItem = (props) => {
                     className={`${styles['amount__input']}`}
                     type='number' value={props.foodAmount[props.foodObj['id']]}
                     onChange={(e) => foodAmountChangeHandler(e)}
+
                 />
                 </div>
                 <button className={`${styles['amount__addbtn']}`}

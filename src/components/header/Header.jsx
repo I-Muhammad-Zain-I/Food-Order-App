@@ -5,7 +5,7 @@ import ModalAppearContext from '../../context/ModalAppearContext';
 import OrderModalContext from '../../context/OrderModalContext';
 
 
-const Header = (props) => {
+const Header = React.memo(() => {
     const modalAppearCtx = useContext(ModalAppearContext);
     const OrderModalCtx = useContext(OrderModalContext);
 
@@ -40,10 +40,10 @@ const Header = (props) => {
                 >
                 <img className={`${styles['cart-icon']}`} src={cartSvg}/>
                 <p className={`${styles['cart-label']}`}>Your Cart</p>
-                <div className={`${styles['cart-item-counts']}`}>{props.orderItemCount}</div>
+                <div className={`${styles['cart-item-counts']}`}>{orderedItems.length}</div>
             </button>
         </header>
     )
-}
+});
 
 export default Header

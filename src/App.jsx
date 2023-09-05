@@ -78,7 +78,7 @@ function App() {
 
     return (
         <BackgroundImage>
-            <Header orderItemCount = {OrderModalCtx.orderedItems.length}/>
+            <Header />
             <main>
                 <InfoBoard />
                 <FoodList AddtoCartHandler = {AddtoCartHandler}/>
