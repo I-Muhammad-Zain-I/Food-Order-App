@@ -30,3 +30,9 @@
 .board__desc {
     
 }
+
+@media screen and (max-width: 768px) {
+    .info-board {
+        width: 90%;
+    }
+}

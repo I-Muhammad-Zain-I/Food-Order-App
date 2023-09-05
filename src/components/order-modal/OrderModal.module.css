@@ -153,3 +153,9 @@
     padding: 10px;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .order-modal {
+        width: 90%;
+    }
+}

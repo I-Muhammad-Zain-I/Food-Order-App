@@ -89,3 +89,9 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    .food-list-container {
+        width: 90%;
+    }
+}
