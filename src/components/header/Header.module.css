@@ -90,18 +90,17 @@
     }
     .cart-button {
         width: 40%;
-        font-size:1rem;
         margin-right: 1rem;
     }
     .cart-icon {
-        width: 20px;
+        width: 10px;
     } 
     .cart-item-counts {
-        font-size: 0.8rem;
-        padding: 5px 10px;
+        font-size: 0.6rem;
+        padding: 5px 8px;
     }
     .cart-label {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 
