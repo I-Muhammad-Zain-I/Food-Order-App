@@ -90,7 +90,7 @@
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .food-list-container {
         width: 90%;
     }
