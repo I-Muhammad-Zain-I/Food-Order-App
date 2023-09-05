@@ -9,14 +9,14 @@ const InfoBoard = React.memo(() => {
                 Delicious Food, Delivered to you!
             </h2>
             <p className={`${styles['board__desc']}`}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quam temporibus nam iste deserunt architecto quae laborum doloribus ratione officia, molestiae, aspernatur quo 
+            Welcome to ReactMeals, your neighborhood spot for delicious food. We're committed to using fresh, locally-sourced ingredients to create dishes that are both flavorful and satisfying. Our friendly and attentive staff is here to make sure you have a memorable dining experience
             </p>
             <p className={`${styles['board__desc']}`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum suscipit nihil illo officiis est molestias modi perspiciatis, 
+            Whether you're looking for a casual meal with friends or a romantic dinner for two, ReactMeals is the perfect place for you. Come on in and see for yourself!, 
             </p>
         </section>
     </div>
   )
 });
 
-export default InfoBoard
+export default InfoBoard;
